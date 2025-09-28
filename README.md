@@ -86,8 +86,7 @@ dataset/
 ### Installation
 ```bash
 # Clone the repository
-git clone [repository-url]
-cd glaucoma-cdr-estimation
+git clone https://github.com/ankritRisal/Fundus_images_CDR_segmentation.git
 
 # Install dependencies
 pip install -r requirements.txt
@@ -95,19 +94,23 @@ pip install -r requirements.txt
 
 ### Training
 ```bash
-python train.py --data_path dataset/ --epochs 100 --batch_size 16
+Run FineTuned_Model.ipynb
 ```
 
-### Inference
+### Evaluation
 ```bash
-python predict.py --image_path images/sample.bmp --model_path models/best_model.pth
+python evaluater.py 
 ```
 
 ### Web Interface
 ```bash
-python app.py
+streamlit run newscripts.py
 ```
 Access the frontend demo at `http://localhost:5000`
+
+### Demo
+![Demo](Image_path)
+*Demo image of streamlit app*
 
 ## 🏗️ Model Architecture
 
